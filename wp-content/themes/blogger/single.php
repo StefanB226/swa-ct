@@ -6,3 +6,5 @@
  * @package blogger
  */
 ?>
+
+<?php get_header(); ?>

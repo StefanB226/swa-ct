@@ -11,7 +11,7 @@
     <hr class="tm-hr-primary">
     <a href="post.html" class="effect-lily tm-post-link tm-pt-60">
         <div class="tm-post-link-inner">
-            <img src="<?php the_post_thumbnail(); ?>" alt="Image" class="img-fluid">                            
+            <?php the_post_thumbnail(); ?>                            
         </div>
         <span class="position-absolute tm-new-badge">New</span>
         <h2 class="tm-pt-30 tm-color-primary tm-post-title"><?php the_title(); ?></h2>
