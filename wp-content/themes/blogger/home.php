@@ -50,5 +50,8 @@
                             </ul>
                         </nav>
                     </div>               
-                </div>            
+                </div>       
+                <div class="sidebar">
+                    <?php get_sidebar(); ?>
+                </div>     
 <?php get_footer(); ?>

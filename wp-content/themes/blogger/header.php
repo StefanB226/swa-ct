@@ -26,7 +26,7 @@
                 <h1 class="text-center">Xtra Blog</h1>
             </div>
             <nav class="tm-nav" id="tm-nav">            
-                <ul>
+                <!-- <ul>
                     <li class="tm-nav-item active"><a href="index.html" class="tm-nav-link">
                         <i class="fas fa-home"></i>
                         Blog Home
@@ -43,7 +43,11 @@
                         <i class="far fa-comments"></i>
                         Contact Us
                     </a></li>
-                </ul>
+                </ul> -->
+                <?php wp_nav_menu( array(
+                    'theme_location' => 'primary',
+                    'menu_class' => 'primary-menu-class',
+                ) ); ?>
             </nav>
             <div class="tm-mb-65">
                 <a rel="nofollow" href="https://fb.com/templatemo" class="tm-social-link">

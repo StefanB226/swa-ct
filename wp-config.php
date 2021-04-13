@@ -20,13 +20,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'custom_themes' );
+define( 'DB_NAME', 'swa_ct' );
 
 /** MySQL database username */
 define( 'DB_USER', 'root' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'root' );
+define( 'DB_PASSWORD', '' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );
@@ -77,7 +77,7 @@ $table_prefix = 'wp_';
  *
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG', true );
+define( 'WP_DEBUG', false );
 
 /* That's all, stop editing! Happy publishing. */
 
@@ -89,5 +89,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 // Disable FTP
 define('FS_METHOD', 'direct');
 
+define('FORCE_SSL_LOGIN', false);
+define('FORCE_SSL_ADMIN', false);
+define( 'CONCATENATE_SCRIPTS', false );
+define( 'SCRIPT_DEBUG', true );
+
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+
+define('WP_HOME','http://swa.localhost');
+define('WP_SITEURL','http://swa.localhost');
